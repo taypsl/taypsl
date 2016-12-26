@@ -3,116 +3,107 @@
 <head>
 	<meta charset="utf-8">
 	<title>Taylor Parsell</title>
-<!-- Responsive viewport tag, tells small screens that it's responsive -->
+	<meta name="description" content="Welcome to Taylor Parsell's portfolio site. Browse projects in web development, ux, and design.">
+	<!-- Responsive viewport tag, tells small screens that it's responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<meta name="description" content="Welcome to Taylor Parsell's portfolio site. Browse projects in web development, ux, and design.">
-
-<!-- Normalize.css, a cross-browser reset file -->
+	<!-- Normalize.css, a cross-browser reset file -->
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
-
-<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Pacifico|Pragati+Narrow|Quattrocento+Sans|Roboto+Slab" rel="stylesheet">
-
-<!-- Stylesheets -->
- 	<link rel="stylesheet" href="main.css" />
- 	<link rel="stylesheet" href="float-grid.css" />
-
-<!-- jQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://use.fontawesome.com/017250ee89.js"></script>
-
+  	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,500" rel="stylesheet">
+	<!-- Stylesheets -->
+ 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 	<header>
-		<h1 class="name">TAYLOR PARSELL</h1>
-		<nav>
-			<a class="links" href="#link1">PORTFOLIO</a>
-			<a class="links" href="#link2">ABOUT</a>
+		<h1 class="name"><a class="name" href="#linkPlaceholder">TAYLOR PARSELL</a></h1>
+		<nav id="dropdown">
+			<a class="links" href="#link1">ABOUT</a>
+			<a class="links" href="#link2">PORTFOLIO</a>
 			<a class="links" href="#link3">CONTACT</a>
 		</nav>
 	</header>
 
-	<div class="container" id="link1">
-			<div class="title">Hello, let's talk about</div>
-			<div class="dropdown">
-				<a class="dropbtn">web development&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a>
-				<div class="dropdown-content">
-					<a href="#">ux research</a>
-					<a href="#">print design</a>
-					<a href="#">hobbys</a>
-				</div>
-			</div>
-			<hr>
-			</div>
-		
-			<div class="portfolio">
-				<div class="row">
-					<div class="col-6">
-						<div class="box DB2016"><img src="images/DB2016.png" alt="David's Birthday page">
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="box analog"><img src="images/analogsea.png" alt="Analog Sea form">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<div class="box starwars"><img src="images/starwars.png" alt="Star Wars cards">
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="box unicorns"><img src="images/unicorns.png" alt="Taylor and the Unicorns story">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-				<div class="col-6">
-					<div class="box invite"><img src="images/invite.png" alt="retro wedding invitation">
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="box stardriver"><img src="images/stardriver.png" alt="Star Driver mobile app">
-					</div>
-				</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<div class="box drivepro"><img src="images/drivepro.png" alt="teen app project">
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="box schwinn"><img src="images/schwinn.png" alt="Schwinn restoration">
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
+	<section class="about" id="link1">
+		<h3 class="section-title first-section">ABOUT</h3>
+		<hr class="section-line">
+		<p class="about-text">Hi there! I'm a UX designer-turned-developer interested in front-end web development opportunities. After three and a half years watching programmers use mad skills and witchcraft to bring insights and designs to life, I decided I wanted in on the sorcery. My favorite things are using HTML, CSS and JavaScript to create cool, interactive apps, with just a dash of magic. I also come equipped with experience in backend frameworks such as Node.js, MongoDB and React Native. 
 
-	<div class="container" id="link2">
-		<div class="title about">Hi, I'm Taylor</div>
+		When I'm not building apps with HTML, CSS and JavaScript, I can be found building bicycles with steel, rubber, and spray paint.</p>
+	</section>
 
-		<hr> 
-		<p class="aboutText">I'm an anthropologist-turned-UX Designer-turned-Web Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia faucibus leo, eget vehicula libero auctor vel. Nam vitae hendrerit dolor.</p>
-		<div class="aboutPhoto">
+	<section class="portfolio" id="link2">
+		<h3 class="section-title">PORTFOLIO</h3>
+		<hr class="section-line">
+		<div class="container">
+			<div class="box web" id="wikihood">
+				<a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img src="images/wikihood.png"><h4 class="img-text">Explore the WikiHood</h4><p class="img-text">Geolocation app that uses Google Maps and Wikipedia APIs</p><p class="img-text">#html #css #javascript #apis</p></a>
+			</div>
+			<div class="box web" id="hp-quiz">
+				<a class="box-hover" href="http://taypsl.github.io/quiz-game" target="blank"><img src="images/hp-quiz-app.png"></a>
+			</div>
+			<div class="box web" id="pirate-bartender">
+				<a class="box-hover" href="http://taypsl.github.io/pirate-bartender" target="blank"><img src="images/pirate-bartender.png"></a>
+			</div>
+			<div class="box web" id="thinkful-tube">
+				<a class="box-hover" href="http://taypsl.github.io/thinkful-tube" target="blank"><img src="images/thinkful-tube.png"></a>
+			</div>
+			<div class="box web" id="dbrad-birthday">
+				<a class="box-hover" href="http://taypsl.github.io/star-wars-responsive-challenge-starter-files" target="blank"><img src="images/star-wars-responsive.png"></a>
+			</div>
+			<div class="box web" id="star-driver">
+				<a class="box-hover" href="http://taypsl.github.io/dbirthday2016" target="blank"><img src="images/dbirthday2016.png"></a>
+			</div>		
+			<div class="box ux" id="star-driver">
+				<a class="box-hover" href="https://taylorparsell.com/2015/12/02/mobile-project/" target="blank"><img src="images/stardriver.png"></a>
+			</div>
+			<div class="box ux" id="drivepro">
+				<a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank"><img src="images/drivepro.png"></a>
+			</div>
+			<div class="box print" id="invite">
+				<a class="box-hover" href="https://taylorparsell.com/2015/10/28/one-sweet-dream/" target="blank"><img src="images/invite.png"></a>
+			</div>				
+			<div class="box bikes" id="schwinn-varsity">
+				<a class="box-hover" href="https://taylorparsell.com/2016/02/08/schwinn-restoration/" target="blank"><img src="images/schwinn.png"></a>
+			</div>
+			<!-- <div class="box bikes" id="strangerthings-bmx">
+				<a class="box-hover" href="" target="blank"><img src="images/.png"></a>
+			</div>
+			<div class="box web" id="unicorns">
+				<a class="box-hover" href="https://taypsl.github.io/TaylorNUnicorns/" target="blank"><img src="images/unicorns.png"></a>
+			</div> 	-->	
+			<div class="gap"></div>
+  			<div class="gap"></div>
 		</div>
-	</div>
+	</section>
 
-	<div class="container" id="link3">
-		<div class="title contact">Get in touch!</div>
-
-		<hr> 
-		<div class="contactBox">
+	<section class="contact" id="link3">		
+		<h3 class="section-title">CONTACT</h3>
+		<hr class="section-line">
+		<p class="contact-text">Want to work together to build your dream website/application/bicycle? Send me a message using the form below!</p>
+		<div class="form-container" id="contact-form">
+			<form id="contact" action="mailto:tayparsell@gmail.com" method="post" enctype="text/plain">
+				<hr class="form-line">
+				<input type="text" name="name" placeholder="name">
+				<hr class="form-line">
+				<input type="text" name="email" placeholder="email">
+				<hr class="form-line">
+				<input type="text" name="phone" placeholder="phone">
+				<hr class="form-line">
+				<input type="text" name="message" size="50" placeholder="message"><br>
+				<input type="submit" id="submit" value="Send">
+			</form>
 		</div>
-	</div>
+	</section>
 
 	<footer>
+		<div class="icons">
+			<a href="https://github.com/taypsl" class="footer-links"><img src="images/github-sign.png" class="icon" alt="github" /></a>
+			<a href="https://linkedin.com/in/tparsell" class="footer-links"><img src="images/linkedin-sign.png" class="icon" alt="linkedin" /></a>
+			<p class="copyright">Copyright &copy; taypsl 2016</p>
+		</div>
 	</footer>
-
+	<!-- scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/017250ee89.js"></script>
 </body>
 </html>
-
-
-
-
-
