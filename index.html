@@ -6,20 +6,27 @@
 	<meta name="description" content="Welcome to Taylor Parsell's portfolio site. Browse projects in web development, ux, and design.">
 	<!-- Responsive viewport tag, tells small screens that it's responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Normalize.css, a cross-browser reset file -->
-  	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+	<!-- Normalize.css, a cross-browser reset file
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet"> -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,500" rel="stylesheet">
 	<!-- Stylesheets -->
  	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-	<header>
-		<h1 class="name"><a class="name" href="#linkPlaceholder">TAYLOR PARSELL</a></h1>
-		<nav id="dropdown">
-			<a class="links" href="#link1">ABOUT</a>
-			<a class="links" href="#link2">PORTFOLIO</a>
-			<a class="links" href="#link3">CONTACT</a>
+	<header class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<h1 class="name"><a class="name" href="#linkPlaceholder"></a>Taylor Parsell</h1>
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#link1">ABOUT</a></li>
+						<li><a href="#link2">PORTFOLIO</a></li>
+						<li><a href="#link3">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 
