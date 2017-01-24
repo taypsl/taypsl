@@ -8,91 +8,125 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Normalize.css, a cross-browser reset file
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet"> -->
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
   	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,500" rel="stylesheet">
 	<!-- Stylesheets -->
- 	<link rel="stylesheet" href="css/main.css" />
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<header class="container-fluid">
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<h1 class="name"><a class="name" href="#linkPlaceholder"></a>Taylor Parsell</h1>
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="#link1">ABOUT</a></li>
-						<li><a href="#link2">PORTFOLIO</a></li>
-						<li><a href="#link3">CONTACT</a></li>
-					</ul>
-				</div>
+		
+		<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+			<div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" aria-controls="bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand name" href="#about">TAYLOR PARSELL</a>
+            </div>
+			
+			<div class="navbar-collapse collapse" id="bs-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="links"><a href="#about">ABOUT</a></li>
+					<li class="links"><a href="#portfolio">PORTFOLIO</a></li>
+					<li class="links"><a href="#contact">CONTACT</a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>
+	
+	<hr class="invisible" id="about">
+	<section class="about">
+			<h3 class="section-title first-section">ABOUT</h3>
+			<hr class="section-line">
+			<article class="container">
+			<p class="margin-wrapper greetings">Hi there! I'm a UX designer-turned-developer interested in front-end web development opportunities.</p>
+			<br><p class="margin-wrapper"> After three and a half years watching programmers use mad skills and witchcraft to bring insights and designs to life, I decided I wanted in on the sorcery. My favorite things are using HTML, CSS and JavaScript to create cool, interactive apps, with just a dash of magic. I also come equipped with experience in backend frameworks such as Node.js, MongoDB and React Native. 
 
-	<section class="about" id="link1">
-		<h3 class="section-title first-section">ABOUT</h3>
-		<hr class="section-line">
-		<p class="about-text">Hi there! I'm a UX designer-turned-developer interested in front-end web development opportunities. After three and a half years watching programmers use mad skills and witchcraft to bring insights and designs to life, I decided I wanted in on the sorcery. My favorite things are using HTML, CSS and JavaScript to create cool, interactive apps, with just a dash of magic. I also come equipped with experience in backend frameworks such as Node.js, MongoDB and React Native. 
-
-		When I'm not building apps with HTML, CSS and JavaScript, I can be found building bicycles with steel, rubber, and spray paint.</p>
+			When I'm not building apps with HTML, CSS and JavaScript, I can be found building bicycles with steel, rubber, and spray paint.</p>
+		</article>
 	</section>
-
-	<section class="portfolio" id="link2">
+	
+	<hr class="invisible" id="portfolio">
+	
+	<section class="portfolio">
 		<h3 class="section-title">PORTFOLIO</h3>
 		<hr class="section-line">
 		<div class="container">
-			<div class="box web" id="wikihood">
+			<div class="col-md-4"><a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img src="images/wikihood.png"></a>
+			</div>
+			<div class="col-md-8"><h4>Explore the WikiHood</h4><p>WikiHood lets you explore the world around you through location-based Wikipedia articles. Enter in a location or share your own to discover notable landmarks, fascinating histories, and unexpected events right in your own backyard. You might be surprised what you’ll find in your WikiHood!</p><p><a href="https://taypsl.github.io/explore-the-wikihood" target="blank">View Demo</a> || <a href="https://github.com/taypsl/explore-the-wikihood" target="blank">View Code</a></p>
+			</div>	
+		</div>
+		<hr class="portfolio-line">
+		<div class="container">
+			<div class="col-md-8"><h4>The Ultimate Harry Potter Quiz Game</h4><p>Test your knowledge of the Wizarding World with this interactive quiz game.</p><p><a href="http://taypsl.github.io/quiz-game" target="blank">View Demo</a> || <a href="https://github.com/taypsl/quiz-game" target="blank">View Code</a></p>
+			</div>	
+			<div class="col-md-4"><a class="box-hover" href="http://taypsl.github.io/quiz-game" target="blank"><img src="images/hp-quiz-app.png"></a>
+			</div>
+		</div>
+	</section>
+<!--
+	<section class="portfolio">
+		<h3 class="section-title">PORTFOLIO</h3>
+		<hr class="section-line">
+		<div class="container">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="wikihood">
 				<a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img src="images/wikihood.png"><h4 class="img-text">Explore the WikiHood</h4><p class="img-text">Geolocation app that uses Google Maps and Wikipedia APIs</p><p class="img-text">#html #css #javascript #apis</p></a>
 			</div>
-			<div class="box web" id="hp-quiz">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="hp-quiz">
 				<a class="box-hover" href="http://taypsl.github.io/quiz-game" target="blank"><img src="images/hp-quiz-app.png"></a>
 			</div>
-			<div class="box web" id="pirate-bartender">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="pirate-bartender">
 				<a class="box-hover" href="http://taypsl.github.io/pirate-bartender" target="blank"><img src="images/pirate-bartender.png"></a>
 			</div>
-			<div class="box web" id="thinkful-tube">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="thinkful-tube">
 				<a class="box-hover" href="http://taypsl.github.io/thinkful-tube" target="blank"><img src="images/thinkful-tube.png"></a>
 			</div>
-			<div class="box web" id="dbrad-birthday">
-				<a class="box-hover" href="http://taypsl.github.io/star-wars-responsive-challenge-starter-files" target="blank"><img src="images/star-wars-responsive.png"></a>
-			</div>
-			<div class="box web" id="star-driver">
+
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="star-driver">
 				<a class="box-hover" href="http://taypsl.github.io/dbirthday2016" target="blank"><img src="images/dbirthday2016.png"></a>
 			</div>		
-			<div class="box ux" id="star-driver">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 ux" id="star-driver">
 				<a class="box-hover" href="https://taylorparsell.com/2015/12/02/mobile-project/" target="blank"><img src="images/stardriver.png"></a>
 			</div>
-			<div class="box ux" id="drivepro">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 ux" id="drivepro">
 				<a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank"><img src="images/drivepro.png"></a>
 			</div>
-			<div class="box print" id="invite">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 print" id="invite">
 				<a class="box-hover" href="https://taylorparsell.com/2015/10/28/one-sweet-dream/" target="blank"><img src="images/invite.png"></a>
 			</div>				
-			<div class="box bikes" id="schwinn-varsity">
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 bikes" id="schwinn-varsity">
 				<a class="box-hover" href="https://taylorparsell.com/2016/02/08/schwinn-restoration/" target="blank"><img src="images/schwinn.png"></a>
 			</div>
-			<!-- <div class="box bikes" id="strangerthings-bmx">
+			<div class="box bikes" id="strangerthings-bmx">
 				<a class="box-hover" href="" target="blank"><img src="images/.png"></a>
+			</div>
+			<div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-0 web" id="starwars">
+				<a class="box-hover" href="http://taypsl.github.io/star-wars-responsive-challenge-starter-files" target="blank"><img src="images/star-wars-responsive.png"></a>
 			</div>
 			<div class="box web" id="unicorns">
 				<a class="box-hover" href="https://taypsl.github.io/TaylorNUnicorns/" target="blank"><img src="images/unicorns.png"></a>
-			</div> 	-->	
+			</div> 	
 			<div class="gap"></div>
   			<div class="gap"></div>
-		</div>
+		</div> -->	
 	</section>
-
-	<section class="contact" id="link3">		
+	<hr class="invisible" id="contact">
+	<section class="contact">		
 		<h3 class="section-title">CONTACT</h3>
 		<hr class="section-line">
 		<p class="contact-text">Want to work together to build your dream website/application/bicycle? Send me a message using the form below!</p>
 		<div class="form-container" id="contact-form">
-			<form id="contact" action="mailto:tayparsell@gmail.com" method="post" enctype="text/plain">
+			<form id="contact" action="https://formspree.io/tayparsell@email.com" method="post">
 				<hr class="form-line">
 				<input type="text" name="name" placeholder="name">
 				<hr class="form-line">
-				<input type="text" name="email" placeholder="email">
+				<input type="text" name="_replyto" placeholder="email">
 				<hr class="form-line">
 				<input type="text" name="phone" placeholder="phone">
 				<hr class="form-line">
@@ -112,5 +146,6 @@
 	<!-- scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://use.fontawesome.com/017250ee89.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
