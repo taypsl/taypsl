@@ -44,7 +44,7 @@
 			<h3 class="section-title first-section">ABOUT</h3>
 			<hr class="section-line">
 			<article class="container">
-			<p class="margin-wrapper greetings">Hi there! I'm a UX designer-turned-developer interested in front-end web development opportunities.</p>
+			<p class="margin-wrapper greetings">Hi there! I'm a UX designer-turned-developer interested in front end web development opportunities.</p>
 			<br><p class="margin-wrapper"> After three and a half years watching programmers use mad skills and witchcraft to bring insights and designs to life, I decided I wanted in on the sorcery. My favorite things are using HTML, CSS and JavaScript to create cool, interactive apps, with just a dash of magic. I also come equipped with experience in backend frameworks such as Node.js, MongoDB and React Native. 
 
 			When I'm not building apps with HTML, CSS and JavaScript, I can be found building bicycles with steel, rubber, and spray paint.</p>
@@ -64,10 +64,11 @@
 		</div>
 		<hr class="portfolio-line">
 		<div class="container">
-			<div class="col-md-8"><h4>Explore the WikiHood</h4><p>WikiHood lets you explore the world around you through location-based Wikipedia articles. Enter in a location or share your own to discover notable landmarks, fascinating histories, and unexpected events right in your own backyard. You might be surprised what you’ll find in your WikiHood!</p><p><a href="https://taypsl.github.io/explore-the-wikihood" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/explore-the-wikihood" target="blank">&nbsp;View Code</a></p>
+			<div class="col-md-4 col-md-push-8"><a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img class="img-fluid" src="images/wikihood.png"></a>
+			</div>					
+			<div class="col-md-8 col-md-pull-4"><h4>Explore the WikiHood</h4><p>WikiHood lets you explore the world around you through location-based Wikipedia articles. Enter in a location or share your own to discover notable landmarks, fascinating histories, and unexpected events right in your own backyard. You might be surprised what you’ll find in your WikiHood!</p><p><a href="https://taypsl.github.io/explore-the-wikihood" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/explore-the-wikihood" target="blank">&nbsp;View Code</a></p>
 			</div>	
-			<div class="col-md-4"><a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img class="img-fluid" src="images/wikihood.png"></a>
-			</div>			
+	
 		</div>
 		<hr class="portfolio-line">
 		<div class="container">
@@ -75,6 +76,20 @@
 			</div>
 			<div class="col-md-8"><h4>The Ultimate Harry Potter Quiz Game</h4><p>Test your knowledge of the Wizarding World with this interactive quiz game.</p><p><a href="http://taypsl.github.io/quiz-game" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/quiz-game" target="blank">&nbsp;View Code</a></p>
 			</div>	
+		</div>
+		<hr class="portfolio-line">
+		<div class="container">
+			<div class="col-md-4 col-md-push-8"><a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project/" target="blank"><img class="img-fluid" src="https://taylorparselldotcom.files.wordpress.com/2015/12/perspective-sm.png"></a>
+			</div>				
+			<div class="col-md-8 col-md-pull-4"><h4>Mobile App Redesign (UX)</h4><p>The goal of this project was to redesign an existing mobile app to inspire teenagers to practice safer driving habits and to improve user engagement with the application.</p><p><a href="https://taylorparsell.com/portfolio/mobile-project/" target="blank">View More&nbsp;</a></p>
+			</div>			
+		</div>
+		<hr class="portfolio-line">
+		<div class="container">
+			<div class="col-md-4"><a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank"><img class="img-fluid" src="images/driveproBanner.png"></a>
+			</div>				
+			<div class="col-md-8"><h4>Mobile Prelicense App (UX)</h4><p>The goal of this project was to design a mobile application to improve the driver’s learning experience for teen drivers and their parents.</p><p><a href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank">View More&nbsp;</a></p>
+			</div>			
 		</div>
 	</section>
 
@@ -84,21 +99,22 @@
 		<h3 class="section-title">CONTACT</h3>
 		<hr class="section-line">
 		<p class="contact-text">Want to work together to build your dream website/application/bicycle? Send me a message using the form below!</p>
-		<div class="form-container" id="contact-form">
-			<form id="contact" action="https://formspree.io/tayparsell@gmail.com" method="post">
+		<div class="form-container" id="contactform">
+			<form id="contact" role="form" action="form.php" method="post">
 				<hr class="form-line">
-				<input type="text" name="name" placeholder="name">
+				<input type="text" name="name" placeholder="name" id="name">
 				<hr class="form-line">
-				<input type="text" name="_replyto" placeholder="email">
+				<input type="text" name="_replyto" placeholder="email" id="email">
 				<hr class="form-line">
-				<input type="text" name="phone" placeholder="phone">
+				<input type="text" name="phone" placeholder="phone" id="phone">
 				<hr class="form-line">
-				<input type="text" name="message" id="message" size="50" placeholder="message">
-				<input type="text" name="_gotcha" style="display:none" /><br>
-				<hr class="form-line">
-				<input type="submit" id="submit" value="Send">
+				<input type="text" name="message" id="message" size="50" placeholder="message" id="message">
+<!-- 				<input type="text" name="_gotcha" style="display:none" /><br>
+ -->				<hr class="form-line">
+				<input type="submit" id="form-submit" value="Send">
 			</form>
 		</div>
+		<div id="msgSubmit" class="text-center hidden">Message sent!</div>
 	</section>
 	
 	<footer>

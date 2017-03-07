@@ -123,6 +123,7 @@ img:hover {
   opacity: 1;
 }
 */
+
 /* ====== contact ====== */
 .contact-text {
   margin: 20px 18% 50px 18%; }
@@ -141,7 +142,7 @@ form {
     form input:focus {
       outline: none; }
 
-#submit {
+#form-submit {
   margin-top: 20px;
   padding: 10px;
   background-color: #ffffff;

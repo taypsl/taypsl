@@ -1,14 +1,28 @@
 //form submit 
-var contactMessage = "";
+$("#contactForm").submit(function(event){
+    // cancels the form submission
+    event.preventDefault();
+    submitForm();
+});
 
-$('#submit').on('click', function() {
-	contactMessage = $('#contact').serialize();
-	$.ajax({
-        url: "//formspree.io/tayparsell@gmail.com", 
-        method: "POST",
-        data: {message: message},
-        dataType: "json"
+function submitForm(){
+    // Initiate Variables With Form Content
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var phone = $("#email").val();
+    var message = $("#message").val();
+ 
+    $.ajax({
+        type: "POST",
+        url: "form.php",
+        data: "name=" + name + "&email=" + email + "&message=" + message,
+        success : function(text){
+            if (text == "success"){
+                formSuccess();
+            }
+        }
     });
-    alert('Thanks for the message! I\'ll be in touch within the next 24 hours.');
-    return false;
-})
+}
+function formSuccess(){
+    $( "#msgSubmit" ).removeClass( "hidden" );
+}
