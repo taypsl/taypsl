@@ -142,7 +142,7 @@ form {
     form input:focus {
       outline: none; }
 
-#form-submit {
+#submit {
   margin-top: 20px;
   padding: 10px;
   background-color: #ffffff;
