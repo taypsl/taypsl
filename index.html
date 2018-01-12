@@ -10,9 +10,9 @@
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet"> -->
   
   	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:200,300,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 	<!-- Stylesheets -->
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -20,119 +20,90 @@
 		
 		<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
 			<div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" aria-controls="bs-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand name" href="#about">TAYLOR PARSELL</a>
-            </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" aria-controls="bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand name" href="/">
+        	<img src="images/logo.svg" class="logo" alt="logo"/>
+      	</a>
+      </div>
 			
 			<div class="navbar-collapse collapse" id="bs-navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="links"><a href="#about">ABOUT</a></li>
-					<li class="links"><a href="#portfolio">PORTFOLIO</a></li>
-					<li class="links"><a href="#contact">CONTACT</a></li>
+					<li class="links"><a href="#about">About</a></li>
+					<li class="links"><a href="#projects">Projects</a></li>
+					<li class="links"><a href="#work">Work</a></li>
+					<li class="links"><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	
-	<hr class="invisible" id="about">
-	<section class="about">
-			<h3 class="section-title first-section">ABOUT</h3>
-			<hr class="section-line">
-			<article class="container">
-			<p class="margin-wrapper greetings">Hi there! I'm a UX designer-turned-developer interested in front end web development opportunities.</p>
-			<br><p class="margin-wrapper"> After three and a half years watching programmers use mad skills and witchcraft to bring insights and designs to life, I decided I wanted in on the sorcery. My favorite things are using JavaScript, HTML, and CSS to create cool, interactive apps, with just a dash of magic. I also come equipped with experience in JS frameworks and libraries such as React JS, Node, Express, and MongoDB. 
-
-			When I'm not building apps with HTML, CSS and JavaScript, I can be found building bicycles with steel, rubber, and spray paint.</p>
-		</article>
-	</section>
-	
-	<hr class="invisible" id="portfolio">
-	
-	<section class="portfolio">
-		<h3 class="section-title">PORTFOLIO</h3>
-		<hr class="section-line">
-		<div class="container">
-			<div class="col-md-4 col-md-push-8"><a class="box-hover" href="http://dbradbestsongs2017.com/" target="blank"><img class="img-fluid" src="http://res.cloudinary.com/ddvn6aemk/image/upload/v1513702933/dbrad2017/fb-24.png"></a>
-			</div>				
-			<div class="col-md-8 col-md-pull-4"><h4>D-Brad's Best Songs of 2017</h4><p>Experience 2017's most anticipated 'Best Songs' list with this totally revamped, interactive countdown site.</p><p><a href="http://dbradbestsongs2017.com/" target="blank">View More&nbsp;</a></p>
-			</div>			
-		</div>
-		<hr class="portfolio-line">
-		<div class="container">
-			<div class="col-md-4"><a class="box-hover" href="https://mxlist.herokuapp.com/" target="blank"><img class="img-fluid" src="images/mxlist.png"></a>
+	<div class="wrapper">
+		<div class="hero-group">
+			<img class="photo" src="images/img_photo.svg" alt="Taylor" />
+			<h1>Taylor Parsell</h1>
+			<h2>Front-end Web Developer</h2>
+			<div class="icon-group about-icons">
+				<a href="https://github.com/taypsl" target="_blank"><img src="images/icn_github_1.svg" class="icon-about icon-github" alt="github" /></a>
+				<a href="https://angel.co/taypsl" target="_blank"><img src="images/icn_angelco_1.svg" class="icon-about icon-angelco" alt="angel co" /></a>
+				<a href="mailto:taylorparsell@gmail.com" target="_blank"><img src="images/icn_mail_1.svg" class="icon-about icon-email" alt="email" /></a>
+				<a href="https://www.linkedin.com/in/tparsell" target="_blank"><img src="images/icn_linkedin_1.svg" class="icon-about linkedin" alt="linkedin" /></a>
+				<a href="https://drive.google.com/file/d/1ieGzj4ObGmiMh9icFGtIJhV-IqjRMyey/view?usp=sharing" target="_blank"><img src="images/icn_document_1.svg" class="icon-about resume" alt="resume" /></a>
 			</div>
-			<div class="col-md-8"><h4>MX List</h4><p>A throwback to the days of sharing of mix tapes, MX List is a music blogging app that enables users to easily create and share annotated playlists with friends and family. </p><p><a href="https://mxlist.herokuapp.com/" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/mx-list" target="blank">&nbsp;View Code</a></p>
-			</div>	
 		</div>
-		<hr class="portfolio-line">
-		<div class="container">
-			<div class="col-md-4 col-md-push-8"><a class="box-hover" href="https://taypsl.github.io/explore-the-wikihood" target="blank"><img class="img-fluid" src="images/wikihood.png"></a>
-			</div>					
-			<div class="col-md-8 col-md-pull-4"><h4>Explore the WikiHood</h4><p>WikiHood lets you explore the world around you through location-based Wikipedia articles. Enter in a location or share your own to discover notable landmarks, fascinating histories, and unexpected events right in your own backyard. You might be surprised what you’ll find in your WikiHood!</p><p><a href="https://taypsl.github.io/explore-the-wikihood" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/explore-the-wikihood" target="blank">&nbsp;View Code</a></p>
-			</div>	
-	
-		</div>
-		<hr class="portfolio-line">
-		<div class="container">
-			<div class="col-md-4"><a class="box-hover" href="http://taypsl.github.io/quiz-game" target="blank"><img class="img-fluid" src="images/hp-quiz-app.png"></a>
+
+		<hr class="line" id="about">
+
+		<section class="about">
+			<h3 class="section-title">Hello.</h3>
+			<p>I’m a web developer specializing in front-end development with Javascript, HTML, CSS, and JS libraries. In a past life I worked as a UX Designer, creating and testing digital consumer products.</p>
+			<p>Other things I sometimes am: part-time bicycle restorer, on-demand print desinger, and year-round Halloween enthusiast.</p>
+			<div class="icon-group tech-icons">
+				<img src="images/icn_html5.svg" class="icon-tech icon-html" alt="html5"/>
+				<img src="images/icn_css3.svg" class="icon-tech icon-css" alt="css3"/>
+				<img src="images/icn_js.svg" class="icon-tech icon-js" alt="javascript"/>
+				<img src="images/icn_react.svg" class="icon-tech icon-react" alt="react" />
+				<img src="images/icn_redux.svg" class="icon-tech icon-redux" alt="redux" />
+				<img src="images/icn_node.svg" class="icon-tech icon-node" alt="node" />
+				<img src="images/icn_illustrator.svg" class="icon-tech icon-ai" alt="adobe illustrator" />
+				<img src="images/icn_photoshop.svg" class="icon-tech icon-ps" alt="adobe photoshop" />
+				<img src="images/icn_mongo.svg" class="icon-tech icon-mongo" alt="mongo db" />
+				<img src="images/icn_passport.svg" class="icon-tech icon-passport" alt="passport j.s." />
 			</div>
-			<div class="col-md-8"><h4>The Ultimate Harry Potter Quiz Game</h4><p>Test your knowledge of the Wizarding World with this interactive quiz game.</p><p><a href="http://taypsl.github.io/quiz-game" target="blank">View Demo&nbsp;</a> || <a href="https://github.com/taypsl/quiz-game" target="blank">&nbsp;View Code</a></p>
-			</div>	
-		</div>
-		<hr class="portfolio-line">
-		<div class="container">
-			<div class="col-md-4 col-md-push-8"><a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project/" target="blank"><img class="img-fluid" src="https://taylorparselldotcom.files.wordpress.com/2015/12/perspective-sm.png"></a>
-			</div>				
-			<div class="col-md-8 col-md-pull-4"><h4>Mobile App Redesign (UX)</h4><p>The goal of this project was to redesign an existing mobile app to inspire teenagers to practice safer driving habits and to improve user engagement with the application.</p><p><a href="https://taylorparsell.com/portfolio/mobile-project/" target="blank">View More&nbsp;</a></p>
-			</div>			
-		</div>
-		<hr class="portfolio-line">
-		<div class="container">
-			<div class="col-md-4"><a class="box-hover" href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank"><img class="img-fluid" src="images/driveproBanner.png"></a>
-			</div>				
-			<div class="col-md-8"><h4>Mobile Prelicense App (UX)</h4><p>The goal of this project was to design a mobile application to improve the driver’s learning experience for teen drivers and their parents.</p><p><a href="https://taylorparsell.com/portfolio/mobile-project-2/" target="blank">View More&nbsp;</a></p>
-			</div>			
-		</div>
-	</section>
+		</section>
+		
+		<hr class="line" id="projects">
 
-	<hr class="invisible" id="contact">
+		<section class="projects">
+			<h3 class="section-title">Projects.</h3>
+			<div class="project-grid">
+				<img src="images/img_db2017.png" class="project-item item-1" alt="D-Brad's Best Songs of 2017"/>
+				<img src="images/img_mxlist.png" class="project-item item-2" alt="MX-List"/>
+				<img src="images/img_wikihood.png" class="project-item item-3" alt="Explore the WikiHood"/>
+				<img src="images/img_stardriver.png" class="project-item item-4" alt="Star Driver Mobile App"/>
+				<img src="images/img_drivepro.png" class="project-item item-5" alt="Prelicense Mobile App"/>
+			</div>
+		</section>
 
-	<section class="contact">		
-		<h3 class="section-title">CONTACT</h3>
-		<hr class="section-line">
-		<p class="contact-text">Want to work together to build your dream website/application/bicycle? Send me a message using the form below!</p>
-		<div class="form-container" id="contact-form">
-			<form id="contact" action="https://formspree.io/tayparsell@gmail.com" method="post">
-				<hr class="form-line">
-				<input type="text" name="name" placeholder="name">
-				<hr class="form-line">
-				<input type="text" name="_replyto" placeholder="email">
-				<hr class="form-line">
-				<input type="text" name="phone" placeholder="phone">
-				<hr class="form-line">
-				<input type="text" name="message" id="message" size="50" placeholder="message">
-				<input type="text" name="_gotcha" style="display:none" /><br>
-				<hr class="form-line">
-				<input type="submit" id="submit" value="Send">
-			</form>
-		</div>
-	</section>
-	
-	<footer>
-		<div class="icons">
-			<a href="https://github.com/taypsl" class="footer-links"><img src="images/github-sign.png" class="icon" alt="github" /></a>
-			<a href="https://linkedin.com/in/tparsell" class="footer-links"><img src="images/linkedin-sign.png" class="icon" alt="linkedin" /></a>
-			<p class="copyright">Copyright &copy; taypsl 2017</p>
-		</div>
-	</footer>
+		<hr class="line" id="work">
+		
+		<section class="work">
+			<h3 class="section-title">Work.</h3>
+		</section>
+
+		<hr class="line" id="contact">
+
+		<section class="contact">		
+			<h3 class="section-title">Contact.</h3>
+		</section>
+	</div>
+
 	<!-- scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://use.fontawesome.com/017250ee89.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 </body>
