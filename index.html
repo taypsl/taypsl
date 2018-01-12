@@ -6,9 +6,9 @@
 	<meta name="description" content="Welcome to Taylor Parsell's portfolio site. Browse projects in web development, ux, and design.">
 	<!-- Responsive viewport tag, tells small screens that it's responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Normalize.css, a cross-browser reset file
-  	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet"> -->
-  
+	<!-- Normalize.css, a cross-browser reset file -->  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
   	<!-- Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand name" href="/">
+        <a class="navbar-brand name" href="#top">
         	<img src="images/logo.svg" class="logo" alt="logo"/>
       	</a>
       </div>
@@ -42,6 +42,8 @@
 		</nav>
 	</header>
 	
+	<hr class="invisible-line" id="top" />
+
 	<div class="wrapper">
 		<div class="hero-group">
 			<img class="photo" src="images/img_photo.svg" alt="Taylor" />
@@ -56,12 +58,13 @@
 			</div>
 		</div>
 
-		<hr class="line" id="about">
+		<hr class="invisible-line" id="about" />
+		<hr class="line" />
 
 		<section class="about">
 			<h3 class="section-title">Hello.</h3>
 			<p>I’m a web developer specializing in front-end development with Javascript, HTML, CSS, and JS libraries. In a past life I worked as a UX Designer, creating and testing digital consumer products.</p>
-			<p>Other things I sometimes am: part-time bicycle restorer, on-demand print desinger, and year-round Halloween enthusiast.</p>
+			<p>Other things I sometimes am: <a class="link" href="https://taylorparsell.com/portfolio/schwinn-restoration/" target="_blank">part-time bicycle restorer</a>, <a class="link" href="http://taypsl.tumblr.com/" target="_blank">on-demand print desinger</a>, and year-round <a class="link" href="http://taypsl.tumblr.com/post/169625401530/halloween-highlights-2016-2017" target="_blank">Halloween enthusiast</a>.</p>
 			<div class="icon-group tech-icons">
 				<img src="images/icn_html5.svg" class="icon-tech icon-html" alt="html5"/>
 				<img src="images/icn_css3.svg" class="icon-tech icon-css" alt="css3"/>
@@ -76,30 +79,120 @@
 			</div>
 		</section>
 		
-		<hr class="line" id="projects">
+		<hr class="invisible-line" id="projects" />
+		<hr class="line" />
 
 		<section class="projects">
 			<h3 class="section-title">Projects.</h3>
 			<div class="project-grid">
-				<img src="images/img_db2017.png" class="project-item item-1" alt="D-Brad's Best Songs of 2017"/>
-				<img src="images/img_mxlist.png" class="project-item item-2" alt="MX-List"/>
-				<img src="images/img_wikihood.png" class="project-item item-3" alt="Explore the WikiHood"/>
-				<img src="images/img_stardriver.png" class="project-item item-4" alt="Star Driver Mobile App"/>
-				<img src="images/img_drivepro.png" class="project-item item-5" alt="Prelicense Mobile App"/>
-			</div>
+				
+				<div class="project-item item-1">
+					<div class="project-item-info">
+						<h3 class="project-item-info-title">D-Brad's Best Songs of 2017</h3>
+						<p class="project-item-info-text">#react, #node, #scss, #illustrator</p>
+					</div>
+					<a href="http://dbradbestsongs2017.com/" target="_blank"><img src="images/img_db2017.png" class="project-item-img" alt="D-Brad's Best Songs of 2017"/></a>
+				</div>
+
+				<div class="project-item item-2">
+					<div class="project-item-info">
+						<h3 class="project-item-info-title">MX-List</h3>
+						<p class="project-item-info-text">#html, #css, #node, #express, #passportJS, #illustrator</p>
+					</div>
+					<a href="https://mxlist.herokuapp.com/" target="_blank"><img src="images/img_mxlist.png" class="project-item-img" alt="MX-List"/></a>
+				</div>
+
+				<div class="project-item item-3">
+					<div class="project-item-info">
+						<h3 class="project-item-info-title">Explore the WikiHood</h3>
+						<p class="project-item-info-text">#html, #css, #jquery, #APIs, #illustrator</p>
+					</div>
+					<a href="https://taypsl.github.io/explore-the-wikihood" target="_blank"><img src="images/img_wikihood.png" class="project-item-img" alt="Explore the WikiHood"/></a>
+				</div>
+
+				<div class="project-item item-4">
+					<div class="project-item-info">
+						<h3 class="project-item-info-title">Mobile App Redesign</h3>
+						<p class="project-item-info-text">#ux, #adobeXD, #illustrator, #iOS</p>
+					</div>
+					<a href="https://taylorparsell.com/portfolio/mobile-project/" target="_blank"><img src="images/img_stardriver.png" class="project-item-img" alt="Star Driver Mobile App"/></a>
+				</div>
+
+				<div class="project-item item-5">
+					<div class="project-item-info">
+						<h3 class="project-item-info-title">Mobile Prelicense App</h3>
+						<p class="project-item-info-text">#ux, #illustrator, #iOS</p>
+					</div>
+					<a href="https://taylorparsell.com/portfolio/mobile-project-2/" target="_blank"><img src="images/img_drivepro.png" class="project-item-img" alt="Prelicense Mobile App"/></a>
+				</div>
+
+				<div class="project-item item-6">
+					<div class="project-item item-6"></div>
+				</div>
+
+			</div>		
 		</section>
 
-		<hr class="line" id="work">
+		<hr class="invisible-line" id="work" />
+		<hr class="line" />
 		
 		<section class="work">
 			<h3 class="section-title">Work.</h3>
+			<div class="work-row">
+				<div class="work-item">
+					<h4 class="work-item-title">SOFTWARE ENGINEER I</h4>
+					<h4 class="work-item-subtitle">CONTRA COSTA SUPERIOR COURTS</h4>
+					<h4 class="work-item-subtitle">2017-PRESENT</h4>
+				</div>
+				<div class="work-description">
+					Developed front-end components for self-help litigants using React, Redux, Node, MongoDB, SCSS. Scoped and integrated a new content management system, and initiated data migration from a legacy product. Worked with back-end developers to build authentication routes using passportJS and Microsoft Identity Management. 
+				</div>
+			</div>
+			<div class="work-row">
+				<div class="work-item">
+					<h4 class="work-item-title">INTERN</h4>
+					<h4 class="work-item-subtitle">CONTRA COSTA SUPERIOR COURTS</h4>
+					<h4 class="work-item-subtitle">2017</h4>
+				</div>
+				<div class="work-description">
+					Designed and built the front-end components of a new website for self-help litigants using React, SCSS, and Adobe Illustrator. Features built included: site navigation, home page, topics pages, user portal and profile pages. 
+				</div>
+			</div>
+			<div class="work-row">
+				<div class="work-item">
+					<h4 class="work-item-title">FULL STACK WEB DEVELOPMENT STUDENT</h4>
+					<h4 class="work-item-subtitle">THINKFUL</h4>
+					<h4 class="work-item-subtitle">2016-2017</h4>
+				</div>
+				<div class="work-description">
+					Gained experience writing clean, testable UI code while building static and single-page application websites. Collaborated with distributed groups to build features on open-source projects. 
+				</div>
+			</div>
+			<div class="work-row">
+				<div class="work-item">
+					<h4 class="work-item-title">PRODUCT DESIGNER</h4>
+					<h4 class="work-item-subtitle">ALLSTATE</h4>
+					<h4 class="work-item-subtitle">2013-2016</h4>
+				</div>
+				<div class="work-description">
+					Designed, tested and launched two new consumer-facing mobile applications. Guided projects through the product design lifecycle, including designing user studies, synthesizing research, generating insights, developing and testing wireframes, creating detailed visual designs, coordinating with programmers and other business teams to build product, and analyzing market test data for product feedback and improvements. 
+				</div>
+			</div>
 		</section>
 
 		<hr class="line" id="contact">
 
 		<section class="contact">		
 			<h3 class="section-title">Contact.</h3>
+			<p class="contact-p"><a class="contact-link" href="mailto:taylorparsell@gmail.com" target="_blank">Email</a></p>
+			<p class="contact-p"><a class="contact-link" href="https://www.linkedin.com/in/tparsell" target="_blank">LinkedIn</a></p>
+			<p class="contact-p"><a class="contact-link" href="https://twitter.com/taypsl" target="_blank">Twitter</a></p>
 		</section>
+
+		<a class="icon-scroll-to-top" href="#top">
+    	<img src="images/icn_top.svg" class="top-icon" alt="scroll to top"/>
+  	</a>
+
 	</div>
 
 	<!-- scripts-->

@@ -24,14 +24,16 @@ p {
 img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in; }
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in; }
 
 img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
 
+/* ==================== */
 /* ====== header ====== */
+/* ==================== */
 .navbar-custom {
   background-color: #ffffff;
   color: #000000; }
@@ -52,7 +54,7 @@ img:hover {
   border-color: #2194F4; }
 
 .navbar-custom .navbar-toggle .icon-bar {
-  background-color: #ffffff; }
+  background-color: #000000; }
 
 .navbar-brand {
   padding-top: 6.5px;}
@@ -60,18 +62,37 @@ img:hover {
   width: 36px;
   margin-top: 0; }
 
+/* ========================= */
 /* ====== link styles ====== */
-a {
-  text-decoration: none; }
+/* ========================= */
 
-.links {
-  color: #ffffff;
+a {
+  text-decoration: none; 
+}
+
+.links, .contact-link {
+  color: #000000;
   font-size: 1.1em;
   letter-spacing: 1px; }
-  .links:hover {
-    color: #2194F4; }
 
+.links:hover, .contact-link:hover{
+  text-decoration: none;
+  color: #2194F4; }
+
+.link {
+  color: #000000; }
+
+.link:hover {
+  color: #2194F4;
+  text-decoration: none;
+}
+
+.link:active {
+  color: #2194F4;
+}
+/* ================= */
 /* ====== app ====== */
+/* ================= */
 .wrapper {
   margin: 15% 20%;
 }
@@ -80,7 +101,15 @@ a {
   margin-top: 100px;
 }
 
+.invisible-line {
+  visibility: none;
+  opacity: 0;
+}
+
+/* ======================== */
 /* ====== hero group ====== */
+/* ======================== */
+
 .hero-group {
   margin: 6em auto 0 auto;
   text-align: center; }
@@ -93,13 +122,13 @@ a {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
 }
-
 .icon-about {
   width: 40px;
   height: 40px;
   margin: 0.8em 0;
+}
+.icon-about {
   -webkit-filter: grayscale(100%) saturate(0%) brightness(70%) contrast(1000%);
   filter: grayscale(100%) saturate(0%) brightness(70%) contrast(1000%);
   -webkit-transition: .2s ease-in;
@@ -111,7 +140,17 @@ a {
   filter: grayscale(0%);
 }
 
+.icon-scroll-to-top img {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+/* =========================== */
 /* ====== about section ====== */
+/* =========================== */
 .about {
 }
 
@@ -123,29 +162,101 @@ a {
   width: 80px;
 }
 
+/* ====================== */
 /* ====== projects ====== */
+/* ====================== */
 .projects {
   width: 100%;
 }
 
 .project-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
 }
 
-img.project-item {
+div.project-item {
+  position: relative;
+}
+
+a.project-item, div.project-item {
 /*  width: 260px;
   height: 260px;*/
   width: 33%;
-  height: 33%; }
+  height: 33%;
+  flex-grow: 1;
+  margin: 1em; }
 
-.project-item {
-
+img.project-item-img {
+  width: 100%;
 }
 
-/* ====== work ====== */
+.project-item-info {
+  position: absolute;
+  background-color: #2194F4;
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  bottom: 0;
+}
 
+.project-item-info-title, .project-item-info-text {
+  margin: 0;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.project-item-info-text {
+  padding-bottom: 0.5em;
+  font-size: 1em;
+}
+
+/* ================== */
+/* ====== work ====== */
+/* ================== */
+.work-row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em 0;
+}
+
+.work-item, .work-description {
+}
+
+.work-item {
+  margin-bottom: 1em; }
+
+.work-item-title, .work-item-subtitle {
+  font-size: 1em;
+  margin: 0; }
+
+.work-item-title {
+  font-weight: 700;
+}
+/* ===================== */
 /* ====== contact ====== */
+/* ===================== */
+.contact-p {
+  font-size: 1em;
+}
+
+/* ======================= */
+/* ==== media queries ==== */
+/* ======================= */
+@media screen and (min-width: 450px) {
+  .about-icons {
+    width: 300px;
+  }
+  .work-item, .work-description {
+    width: 50%;
+  }
+  .work-item {
+    margin-bottom: 0;
+  }
+}
 
