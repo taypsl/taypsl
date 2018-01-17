@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	$('header').fadeIn(1000).removeClass('hidden');
+	$('.wrapper').fadeIn(1500).removeClass('hidden');
+
+	$('.icon-scroll-to-top').addClass('hidden');
 	// on mouseover, fade in project info
 	$('.project-item').mouseover(function() {
 		console.log('mouseover')
@@ -12,12 +16,24 @@ $(document).ready(function () {
 	});
 
 	// scroll to top button appears
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 800) {
-			$('.icon-scroll-to-top').fadeIn();
-		} else {
-			$('.icon-scroll-to-top').fadeOut();
-		}
+	// $(window).scroll(function(){
+	// 	if ($(this).scrollTop() > 800) {
+	// 		$('.icon-scroll-to-top').fadeIn();
+	// 	} else {
+	// 		$('.icon-scroll-to-top').fadeOut();
+	// 	}
+	// });
+
+
+	$(document).scroll(function() {
+
+	  var y = $(this).scrollTop();
+	  if (y > 800) {
+	  	$('.icon-scroll-to-top').fadeIn(1000).removeClass('hidden');
+	    $('.icon-scroll-to-top').fadeIn();
+	  } else {
+	    $('.icon-scroll-to-top').fadeOut();
+	  }
 	});
 
 	// on click of link, scroll to page location
