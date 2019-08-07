@@ -123,7 +123,11 @@ a {
 
 .photo {
   width: 200px; }
-
+.icon-group {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
 .about-icons {
   display: flex;
   justify-content: space-between;
@@ -167,6 +171,7 @@ a {
 
 .icon-tech {
   width: 80px;
+  margin:10px;
 }
 
 /* ====================== */
